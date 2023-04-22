@@ -1,0 +1,191 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(72, 72, 72);
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+    background-image: url(https://plus.unsplash.com/premium_photo-1676782583940-633240617c78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80) ;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    place-content: center;
+    background-size: cover;
+ 
+}
+
+form{
+    
+    padding: 2.4rem;
+    max-width: 40rem;
+    margin: auto ;
+    margin: 10px;
+    background-color: #181b2071;
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+}
+
+
+
+#credit-card{
+    width: 32.8rem;
+    height: 21.2rem;
+    perspective: 60rem;
+    
+    
+}
+
+
+#credit-card > div{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all .5s cubic-bezier(0.175 , 0.885 , 0.32 , 1.279);
+
+}
+
+
+.credit-card{
+    border-radius: 0.4rem ;
+
+    height: 30px;
+    }
+   
+
+
+#credit-card .front{
+    background: url(assets/Group\ 1.svg) no-repeat;
+    transform: rotateY(0);
+}
+
+#credit-card .back{
+    background: url(assets/Property\ 1=back.svg) no-repeat;
+    transform: rotateY(-180deg);
+
+}
+#credit-card:active .front{
+    transform: rotateY(180deg);
+}
+
+#credit-card:active .back{
+    transform: rotateY(0deg);
+}
+
+
+
+.inputs{
+    margin-top: 4.8rem ;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+
+
+
+.flex{
+    display: flex;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #e5e7eb;
+    gap: 10px;
+}
+
+input{
+    margin-top: .4rem;
+    width: 100%;
+    padding: 1.2rem;
+    border: .1rem solid #41294f;
+    border-radius: .4rem;
+    background-color: #0f1f2a;
+    color: #f3f4f6;
+
+}
+
+
+
+body , input , button{
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input:focus{
+    border: 0.15rem solid #ca93ea;
+    outline: solid rgba(162, 0, 255, 0.244) ;
+    
+}
+input:invalid:focus + .warning{
+    color: rgb(255, 73, 73);
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: .8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.validit{
+
+     display: flex;
+     gap: 14px;
+     
+}
+
+.input-wraper input{
+    background-color: black;
+}
+
+.validit .input-wraper:nth-child(1){
+    flex-basis: 40%;
+}
+
+.validit .val{
+    width: 90%;
+}
+
+.info-security {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+    margin-top: 8.rem;
+}
+
+
+button{
+    color: white;
+    border-radius: 0.5rem;
+    margin-top:10rem ;
+    padding: 1.6rem;
+    width: 100%;
+    background: #9333ea;
+    box-shadow: 0rem 1.6rem  3rem rgb(3, 3, 3)4f6;
+    font-weight: 600;
+    border: 0px;
+}
+
+
+button:hover{
+    transition: all 1s;
+    background: #68319b;
+}
+
+input + .warning{
+    display: none;
+    
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="shortcut icon" href="assets/logo-react.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card banck</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form >
+        <section  id="credit-card">
+
+            <div class="front"></div>
+            <div class="back"></div>
+
+        </section>
+        
+        <section class="inputs flex">
+            <div class="input-wraper">
+                <label for="cc-number">Numero do Cartao</label>
+                <input type="text" name="" id="cc-number" placeholder=" ********">
+                </div>
+                <div class="inputs-wraper">
+                <label for="cc-holder">Nome do Titular</label>
+                <input type="text" id="cc-holder"  placeholder="Nome como esta no cartao" required>
+                <div class="warning">
+                    <img src="assets/Vector (2).svg" alt="alert" width="20px"> 
+                    <span>nome titular obrigatorio</span>
+                </div>
+                
+            </div>
+            
+
+            <div class="validit">
+                <div class="val">
+                    <label for="number">Validade</label>
+                    <input type="datetime-local"  id="number" placeholder=" 00/02/23">
+                </div>
+                <div class="cvc " >
+                    <label for="cvv" class="flex">CVV
+                        <img src="assets/Vector (1).svg" alt="">
+                    </label>
+                    <input type="number" id="cvv"  placeholder="632" required maxlength="3">
+                </div>
+            </div>
+
+
+            <div class="info-security flex">
+
+                <span>Sua Dados estao Seguros</span>
+                 <img src="assets/Vector.svg" alt="gas" >
+               
+
+            </div>
+            
+        </section>
+        <section>
+            <button>Adicionar o Cartao</button>
+        </section>
+      
+    </form>
+    <script src="scopo.js"></script>
+    
+   
+   
+</body>
+</html>
